@@ -60,7 +60,8 @@
     color: white;
     border-radius: 6px;
     width: 250px;
-    height: 60px;
+    height: 70px;
+    font-weight: bold;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -108,12 +109,12 @@
     border-radius: 7px;
     text-align: center;
     border-right: 2.5px solid #b6b6f6;
-    /* border-top: 2.5px solid #b6b6f6; */
 }
 
 .FooterContainer {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
+    width: 50%;
 }
 
 .ticketNumberBox {
@@ -167,24 +168,18 @@
 }
 
 .customCarousel {
-    /* left: 20%; */
     width: 90%;
     border-radius: 10px;
     top: 5%;
 }
+.ticketNumberBox h1 {
+    font-weight: bold;
+}
 
-@media screen and (min-width: 1600px) {
-    .customCarousel {
-        width: 80% !important;
-    }
-
-    .contentContainer {
-        padding-left: 150px;
-    }
-
+@media screen and (min-width: 1900px) {
     .unOrderedList li {
         width: 500px;
-        height: 90px;
+        height: 80px;
         font-size: 50px;
         font-weight: bold;
     }
@@ -218,7 +213,6 @@
     }
     .ticketNumberBox h1 {
         font-size: 70px;
-        font-weight: bold;
     }
     .logoImg {
         width: 150px;
