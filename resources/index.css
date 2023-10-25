@@ -176,6 +176,21 @@
     font-weight: bold;
 }
 
+@media screen and (max-height: 800px) {
+    .customCarousel {
+        width: 80%;
+    }
+    .unOrderedList li {
+        height: 50px;
+    }
+    .contentContainer {
+        padding-left: 100px;
+    }
+    .itemsContainer {
+        padding-right: 60px;
+    }
+}
+
 @media screen and (min-width: 1900px) {
     .unOrderedList li {
         width: 500px;
