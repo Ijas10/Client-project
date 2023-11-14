@@ -154,6 +154,7 @@
 .customTicketContainerDiv {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
     border-radius: 15px;
     width: calc(100% - 20px);
@@ -165,6 +166,7 @@
 .customCounterContainerDiv {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
     border-radius: 15px;
     width: 250px;
@@ -203,16 +205,18 @@
     font-weight: bold;
 }
 
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 800px) {
     .customCarousel {
-        width: 75%;
+        width: 100%;
+        height: auto;
+        top: 0%;
     }
     .unOrderedList1 li,
     .unOrderedList2 li {
-        height: 70px;
+        height: 80px;
     }
     .FooterContainer {
-        width: 58%;
+        width: 60%;
         bottom: 20px;
     }
 }
@@ -280,5 +284,59 @@
         100% {
             transform: translateX(-400%);
         }
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .mainContainer {
+        padding: 3%;
+    }
+    .unOrderedList1 li,
+    .unOrderedList2 li {
+        height: 250px;
+        font-size: 140px;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+    .listHeader {
+        height: 200px !important;
+        line-height: 80px !important;
+    }
+    .listHeader h5 {
+        font-size: 70px !important;
+    }
+    .listHeader p {
+        padding-bottom: 0px !important;
+        font-size: 60px;
+        margin-bottom: 10px !important;
+    }
+    .FooterContainer {
+        bottom: 60px;
+        width: calc(57% - 50px);
+    }
+    .customTicketContainerDiv,
+    .customCounterContainerDiv {
+        height: 180px;
+        border-radius: 20px;
+    }
+    .customTicketContainerDiv h5,
+    .customCounterContainerDiv h5 {
+        font-size: 80px;
+    }
+    .ticketNumberBox {
+        height: 350px;
+        border-radius: 20px;
+    }
+    .ticketNumberBox h1 {
+        font-size: 200px;
+    }
+    .marquee {
+        font-size: 100px;
+    }
+    .headerContainer {
+        margin-bottom: 50px;
+    }
+    .contentContainer {
+        margin-right: 100px;
     }
 }
